@@ -53,15 +53,18 @@ int main(int argc, const char * argv[]) {
  cin.tie(NULL);cout.tie(NULL);
 // code now
    
-    ll n;
-    cin>>n;
+    ll n,k;
+    cin>>k;
+    forj(k){
+        cin>>n;
     vector<ll> v;
+    fori(n){ll x;cin>>x;v.push_back(x);}
     map<ll,ll> mp;
     fori(n){
         mp[v[i]]++;
     }
-    cout<<mp.size();
-    
+    cout<<mp.size()<<endl;
+    }
 //code ends
     return 0;
 }
